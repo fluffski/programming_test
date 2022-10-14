@@ -111,8 +111,6 @@ $ ./main 2.1 PseudoData.csv OutputData.csv
 --------------------------------------------------------------------------------------------*/
 
 int main(int argc, char *argv[]) {
-    cout << "Hello World"; // prints Hello World
-
     if (argc != 4)
     {
         cout << "Incorrect number of arguments. Provide THREE arguments:" << endl;

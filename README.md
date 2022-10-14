@@ -24,6 +24,8 @@ $ ./main 2.1 PseudoData.csv OutputData.csv
 
 The program will parse input csv file in (e.g. PseudoData.csv), process data and save the output into output csv file (e.g. OutputData.csv).
 
+The program is configured to process csv with carriage return as an end of line character. If there is a problem with processing data, try changing delimited in getline(input, line,'\r') to '\n' (getline(input, line,'\n')) on line 139.
+
 Displaying output
 Open ModelOutput.ipynb and run. There is only one cell. Alternatively, run the code below in your favourite place to process it:
 ---- BEGINNING OF CODE ----
