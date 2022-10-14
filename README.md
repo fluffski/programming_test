@@ -13,14 +13,18 @@ There are three input arguments required to run cpp file:
 
 To make it easier, open terminal in directory with cpp and ipynb file. 
 In terminal run these lines:
+```
 $ g++ main.cpp -o main
 $ ./main arg1 arg2 arg3
+```
 
 If files exist or must be generated in different location, provide paths along filenames as appropriate.
 
 Example:
+```
 $ g++ main.cpp -o main
 $ ./main 2.1 PseudoData.csv OutputData.csv
+```
 
 The program will parse input csv file in (e.g. PseudoData.csv), process data and save the output into output csv file (e.g. OutputData.csv).
 
