@@ -1,11 +1,11 @@
 # Simudyne Backend Programming Test
-How to run program
+## How to run program
 
 Program is run in two steps:
 1. Run build and run cpp file with the required arguments - use main.cpp.
 2. Run jupyter notebook script - use ModelOutput.ipynb or copy code provided further in your own jupyter notebook.
 
-Simulating model output
+### Simulating model output
 There are three input arguments required to run cpp file:
 1. Brand factor with values ranging from (0.1 - > 2.9).
 2. Input data file name.
@@ -26,10 +26,9 @@ The program will parse input csv file in (e.g. PseudoData.csv), process data and
 
 The program is configured to process csv with carriage return as an end of line character. If there is a problem with processing data, try changing delimited in getline(input, line,'\r') to '\n' (getline(input, line,'\n')) on line 139.
 
-Displaying output
+### Displaying output
 Open ModelOutput.ipynb and run. There is only one cell. Alternatively, run the code below in your favourite place to process it:
----- BEGINNING OF CODE ----
-import pandas as pd
+'import pandas as pd
 
 # get file name from the user
 print("Provide file name containing model data:")
@@ -39,17 +38,12 @@ outputFilename = input()
 data = pd.read_csv(outputFilename)
 
 # printing the results
-display(data)
----- END OF CODE ----
+display(data)'
 
-This will prompt user to provide file name of the output data and then display the resuls.
-
+This will prompt user to provide file name of the output data and then display the results.
 
 
-
-
-
-Task Description:
+## Task Description:
 You are being asked to create a simple agent based model of a set of agents (with values as defined in PsuedoData) that will execute the basic logic (as defined in PsuedoCode). You should fork this repo and once finished with your submission please email the Github link to john.andrews@simudyne.com
 
 Overall you'll need to do the following things:
