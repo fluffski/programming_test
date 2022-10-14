@@ -287,7 +287,8 @@ Future work and things to consider
 
 */
 
-/*
+/* --- Code to display output in jupyter notebook ---
+
 import pandas as pd
 
 # get file name from the user
