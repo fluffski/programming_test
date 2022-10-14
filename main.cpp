@@ -293,7 +293,6 @@ import pandas as pd
 # get file name from the user
 print("Provide file name containing model data:")
 outputFilename = input()
-# print(outputFilename)
 
 # reading the database
 data = pd.read_csv(outputFilename)
