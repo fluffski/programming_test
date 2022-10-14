@@ -28,7 +28,7 @@ The program is configured to process csv with carriage return as an end of line 
 
 ### Displaying output
 Open ModelOutput.ipynb and run. There is only one cell. Alternatively, run the code below in your favourite place to process it:
-'import pandas as pd
+`import pandas as pd
 
 # get file name from the user
 print("Provide file name containing model data:")
@@ -38,7 +38,7 @@ outputFilename = input()
 data = pd.read_csv(outputFilename)
 
 # printing the results
-display(data)'
+display(data)`
 
 This will prompt user to provide file name of the output data and then display the results.
 
